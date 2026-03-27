@@ -1,0 +1,180 @@
+body {
+    background:
+        linear-gradient(to bottom, rgba(0,0,0,0.4), #141414 40%),
+        radial-gradient(circle at top, rgba(255,255,255,0.08), transparent 45%);
+    background-color: #141414;
+    color: white;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #141414;
+    z-index: 1000;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo {
+    color: #e50914;
+    font-size: 26px;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 18px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #ccc;
+    transition: 0.2s;
+}
+
+.nav-menu a:hover {
+    color: white;
+}
+
+.nav-menu li.active a {
+    color: white;
+    font-weight: normal;   /* remove bold */
+}
+
+/* RIGHT NAV */
+/* RIGHT NAV FIX */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: auto;   /* pushes it to right properly */
+}
+
+/* SEARCH FIX */
+.search {
+    width: 180px;        /* control size */
+    max-width: 200px;
+    padding: 6px 10px;
+    background: black;
+    border: 1px solid #555;
+    color: white;
+    outline: none;
+}
+
+/* ICON */
+.icon {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* PROFILE */
+.profile {
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* HEADER */
+.shows-header {
+    margin-top: 80px;
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.shows-header h1 {
+    font-size: 36px;
+}
+
+/* DROPDOWN */
+.genre-box {
+    position: relative;
+    background: #222;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 35px;
+    background: #1f1f1f;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.genre-box:hover .dropdown {
+    display: block;
+}
+
+/* HERO */
+.hero {
+    height: 90vh;
+    background: linear-gradient(to top, #141414 10%, transparent),
+                url("https://m.media-amazon.com/images/S/pv-target-images/855e8bb647c4a3ccfcdceb8d8d354ffc1df41908b203322b96c6683a0a070f0a._SX1080_FMjpg_.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: flex-end;
+    padding: 80px 50px;
+}
+
+/* SECTIONS */
+.section {
+    padding: 30px 50px;
+}
+
+.section h2 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+/* ROW */
+.row {
+    display: flex;
+    gap: 14px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 20px 0;
+}
+
+.row::-webkit-scrollbar {
+    height: 6px;
+}
+
+.row::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 10px;
+}
+
+/* CARDS */
+.row img {
+    width: 300px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 6px;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+/* HOVER */
+.row img:hover {
+    transform: scale(1.15) translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.8);
+}
+
+/* TOP 10 */
+.top10 img {
+    border-left: 4px solid red;
+}

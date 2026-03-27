@@ -1,0 +1,124 @@
+body {
+    background:
+        linear-gradient(to bottom, rgba(0,0,0,0.4), #141414 40%),
+        radial-gradient(circle at top, rgba(255,255,255,0.08), transparent 45%);
+    background-color: #141414;
+    color: white;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #141414;
+    z-index: 1000;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo {
+    color: #e50914;
+    font-size: 26px;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 18px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+.nav-menu a:hover {
+    color: white;
+}
+
+.nav-menu li.active a {
+    color: white;
+    font-weight: normal;   /* remove bold */
+}
+/* RIGHT NAV */
+/* RIGHT NAV FIX */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: auto;   /* pushes it to right properly */
+}
+
+/* SEARCH FIX */
+.search {
+    width: 180px;        /* control size */
+    max-width: 200px;
+    padding: 6px 10px;
+    background: black;
+    border: 1px solid #555;
+    color: white;
+    outline: none;
+}
+
+/* ICON */
+.icon {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* PROFILE */
+.profile {
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* SECTIONS */
+.section {
+    padding: 30px 50px;
+    margin-top: 70px;
+}
+
+.section h2 {
+    margin-bottom: 15px;
+}
+
+/* ROW */
+.row {
+    display: flex;
+    gap: 14px;
+    overflow-x: auto;
+    padding: 20px 0;
+}
+
+/* CARDS */
+.row img {
+    width: 300px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 6px;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+/* HOVER */
+.row img:hover {
+    transform: scale(1.15) translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.8);
+}
+
+/* TOP 10 STYLE */
+.top10 img {
+    border-left: 4px solid red;
+}
