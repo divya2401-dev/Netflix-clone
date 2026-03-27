@@ -7,7 +7,7 @@ This project replicates the core UI and navigation experience of Netflix, includ
 
 ## 🚀 Live Demo
 
-🔗 https://preeminent-gaufre-927fc9.netlify.app/
+🔗 https://snazzy-heliotrope-3afc30.netlify.app/
 
 ---
 
