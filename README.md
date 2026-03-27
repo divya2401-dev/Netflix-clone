@@ -7,7 +7,7 @@ This project replicates the core UI and navigation experience of Netflix, includ
 
 ## 🚀 Live Demo
 
-🔗 (Add your Netlify/Vercel link here after deployment)
+🔗 https://preeminent-gaufre-927fc9.netlify.app/
 
 ---
 
